@@ -4,9 +4,12 @@
 # until you only visit the 1000th door.
 # What state are the doors in after the last pass? Which are open which are closed?
 
+
 class doorPuzzles {
    
-  public static void main (String[] args){
+  
+    
+   public static void main (String[] args){
 	   
 	   String doors[] = new String[1000];
 	   int i,j,Count=0,DoorNumber=0;
@@ -17,9 +20,15 @@ class doorPuzzles {
 		   doors[i]= "Close";
 	   }
 		  
-         // iteartion from door number 1 to 1000
+		  // first iteration from door 1
+         
+		 for(i=0; i<1000; i++)
+	       {
+		    doors[i]= "Open";
+	       }	
+         // iteartion from door number 2 to 100
 		   
-        for(i=1;i<1000;i++){
+        for(i=2;i<1000;i++){
 			
 			for(j=i; j<1000; j=j+i)
 			{
