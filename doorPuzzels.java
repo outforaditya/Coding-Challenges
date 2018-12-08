@@ -5,7 +5,7 @@
 # What state are the doors in after the last pass? Which are open which are closed?
 
 
-class doorPuzzles {
+class Puzzles {
    
   
     
@@ -20,15 +20,9 @@ class doorPuzzles {
 		   doors[i]= "Close";
 	   }
 		  
-		  // first iteration from door 1
-         
-		 for(i=0; i<1000; i++)
-	       {
-		    doors[i]= "Open";
-	       }	
-         // iteartion from door number 2 to 100
+         // iteartion from door number 1 to 1000
 		   
-        for(i=2;i<1000;i++){
+        for(i=1;i<1000;i++){
 			
 			for(j=i; j<1000; j=j+i)
 			{
