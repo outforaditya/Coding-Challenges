@@ -1,2 +1,1 @@
-# Java
-Java Tutorial Exercise and simple Application
+Coding challanges 
